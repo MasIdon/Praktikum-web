@@ -1,1 +1,1 @@
-# Prakikum-web
+# Pratkikum-web

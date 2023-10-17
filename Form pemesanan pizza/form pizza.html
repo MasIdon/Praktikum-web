@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Pizza</title>
+</head>
+<body>
+    <h1>Warung Roda Maknyus</h1>
+    <p>Pembeli Adalah Raja. Beritau Kami, Siapa Pelanggan Kami Saat Ini!</p>
+    <hr>
+    <form action="hasil-form-pissa.html"></form>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Perkenalkan Diri Anda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><label for="name">Nama</label></td>
+                <td>: <input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Alamat</label></td>
+                <td>: <input type="text" id="address"></td>
+            </tr>
+            <tr>
+                <td><label for="hp">Nomer Handphone</label></td>
+                <td>: <input type="number" id="hp"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>: <input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="description">Catatan lainnya</label></td>
+                <td>: <textarea id="description" ></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <b>Pilih Satu Crust Pizza Anda</b>
+                <h4> Crust Pizza</h4>
+                <ul>
+                    <li>
+                        <input type="radio" id="Pan" name="Crust">
+                        <label for="Pan">Pan Crust</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="Stuffed" name="Crust">
+                        <label for="Stuffed">Stuffed Crust</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="Chessy" name="Crust">
+                        <label for="Chessy">Chessy Bite</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="Crown" name="Crust">
+                        <label for="Crown">Crown Crust</label>
+                    </li>
+                </ul>
+                <h4>Pilih Toping yang Ingin Ditambahkan:</h4>
+                <ul>
+                    <li>    
+                        <input type="checkbox" id="tomat">
+                        <label for="tomat">Saus Tomat</label>
+                    </li>
+                    <li>    
+                        <input type="checkbox" id="Mozarela">
+                        <label for="Mozarela">Keju Mozarella</label>
+                    </li>
+                    <li>    
+                        <input type="checkbox" id="nanas">
+                        <label for="nanas">Nanas</label>
+                    </li>
+                    <li>    
+                        <input type="checkbox" id="sosis">
+                        <label for="sosis">Sosis</label>
+                    </li>
+                    <li>    
+                        <input type="checkbox" id="jamur">
+                        <label for="jamur">Jamur</label>
+                    </li>
+                    <li>    
+                        <input type="checkbox" id="paprika">
+                        <label for="paprika">Paprika</label>
+                    </li>
+                    <li>    
+                        <input type="checkbox" id="ayam">
+                        <label for="ayam">Daging Ayam</label>
+                    </li>
+                </ul>
+                <br>
+                <label for="count">Jumlah Pesanan: </label>
+                <input type="number" id="count">
+                    <br>
+                    <br>
+                <button type="submit">Pesan Sekarang</button>
+                <button type="reset">Reset</button>
+    </body>
+</html>

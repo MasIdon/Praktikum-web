@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotak CSS 3</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .baris1, .baris2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .baris3 {
+            height: 100px;
+            background-color: rgb(178, 81, 16);
+        }
+
+        .kotak1baris1 {
+            height: 100px;
+            flex-grow: 1;
+            background-color: rgb(168, 115, 79);
+        }
+
+        .kotak2baris1 {
+            height: 100px;
+            flex-grow: 4;
+            background-color: rgb(171, 107, 65);
+        }
+
+        .kotak1baris2, .kotak3baris2 {
+            height: 700px;
+            background-color: rgb(172, 95, 44);
+            flex-grow: 2;
+        }
+
+        .kotak2baris2 {
+            height: 700px;
+            background-color: rgb(182, 109, 60);
+            flex-grow: 5.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="baris1">
+            <div class="kotak1baris1">1 baris 1</div>
+            <div class="kotak2baris1">2 baris 1</div>
+        </div>
+        <div class="baris2">
+            <div class="kotak1baris2">1 baris 2</div>
+            <div class="kotak2baris2">2 baris 2</div>
+            <div class="kotak3baris2">3 baris 2</div>
+        </div>
+        <div class="baris3">baris 3</div>
+    </div>
+    
+</body>
+</html>

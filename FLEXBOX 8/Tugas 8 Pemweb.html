@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox idon</title>
+    <style>
+        body {
+            background-color: rgb(31, 31, 31);
+        }
+
+        .con1 {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        
+        .con2 {
+            display: flex;
+            flex-direction: column;
+            width: 82vw;
+        }
+
+        .con3 {
+            display: flex;
+            flex-direction: row;
+            height: 70vh;
+        }
+
+        nav {
+            background-color: pink;
+            width: 15vw;
+        }
+
+        header {
+            background-color: yellow;
+            height: 15vh;
+        }
+
+        article {
+            background-color: rgb(255, 255, 255);
+            width: 62vw;
+        }
+
+        aside {
+            background-color: aqua;
+            width: 15vw;
+        }
+
+        footer {
+            background-color: yellow;
+            height: 15vh;
+        }
+
+        nav, header, article, aside, footer {
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="con1">
+        <nav>Nav</nav>
+        <div class="con2">
+            <header>Header</header>
+                <div class="con3">
+                    <article>Article</article>
+                    <Aside>Aside</Aside>
+                </div>
+            <Footer>Footer</Footer>
+        </div>
+    </div>
+</body>
+</html>

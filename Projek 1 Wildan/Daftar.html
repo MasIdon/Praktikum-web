@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pendaftaran Layanan Klinik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>      
+      form {
+            padding: 20px;
+        }
+        
+        fieldset {
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body style="background-color: rgb(164, 206, 255);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Klinik Jamil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="Utama.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Daftar.html">Booking
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Daftar.html">Daftar</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="Utama.html">Home</a></li>
+          <!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+          <li class="breadcrumb-item active" aria-current="page">Booking</li>
+        </ol>
+      </nav>
+
+      <fieldset style="margin-top: 3%;"><legend><h2>Layanan Utama</h2></legend>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="row">Layanan</th>
+              <td>Spesialis</td>
+              <td>Waktu Pelayanan</td>
+              <td>Harga</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary">
+              <th scope="row">Perawatan Gigi</th>
+              <td>Dr. Samuel Jetstream</td>
+              <td>08:00 - 19:00</td>
+              <td>Rp 80.000</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">Terapi Pijat</th>
+              <td>Dr. Ricardo Milos</td>
+              <td>08:00 - 19:00</td>
+              <td>Rp 120.000</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">Pengecekan Darah</th>
+              <td>Dr. Mike o Hearn</td>
+              <td>08:00 - 19:00</td>
+              <td>Rp 100.000</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">Pemeriksaan Kehamilan</th>
+              <td>Dr. Johnny Pahala</td>
+              <td>08:00 - 21:00</td>
+              <td>Rp 55.000</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">Layanan Khitan</th>
+              <td>Dr. Rusdi</td>
+              <td>08:00 - 19:00</td>
+              <td>Rp 800.000</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">Perawatan Gawat Darurat</th>
+              <td>Dr. Amba</td>
+              <td>08:00 - 23:00</td>
+              <td>Rp 900.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <form>
+          <fieldset>
+            <legend>Booking Layanan Klinik</legend>
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault">Nama</label>
+              <input type="text" class="form-control" placeholder="Nama" id="inputDefault">
+            </div>
+          <div>  
+            <label for="exampleSelect1" class="form-label mt-4">Jenis Kelamin</label>
+            <select class="form-select" id="exampleSelect1">
+              <option>Jenis Kelamin</option>
+              <option>Laki-Laki</option> 
+              <option>Perempuan</option>
+            </select>
+          </div>
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault">Umur</label>
+              <input type="number" class="form-control" placeholder="Umur" id="inputDefault">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label mt-4" for="inputDefault">Nomor Telpon</label>
+              <input type="number" class="form-control" placeholder="No. Telp" id="inputDefault">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Kami perlu email anda hanya untuk mengabari layanan kami untuk anda.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect1" class="form-label mt-4">Pilih Layanan</label>
+              <select class="form-select" id="exampleSelect1">
+                <option>Pilih</option> 
+                <option>Perawatan Gigi</option>
+                <option>Terapi Pijat</option>
+                <option>Layanan Periksa Kehamilan</option>
+                <option>Perawatan Gawat Darurat</option>
+                <option>Layanan Khitan</option>
+                <option>Pengecekan Darah</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea" class="form-label mt-4">Keluhan atau Gejala yang dialami</label>
+              <textarea class="form-control" id="exampleTextarea" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="formFile" class="form-label mt-4">File Dokumentasi Gejala</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <fieldset class="form-group">
+              <legend class="mt-4">Atur hari pemeriksaan</legend>
+              <div>  
+                <label for="exampleSelect1" class="form-label mt-4">Hari</label>
+                <select class="form-select" id="exampleSelect1">
+                  <option>Hari</option>
+                  <option>Senin</option> 
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                  <option>Sabtu</option>
+                  <option>Ahad</option>
+                </select>
+              </div>
+              <div>  
+                <label for="exampleSelect1" class="form-label mt-4">Jam Pelayaan</label>
+                <select class="form-select" id="exampleSelect1">
+                  <option>Jam Pelayanan</option>
+                  <option>08:00</option> 
+                  <option>10:00</option>
+                  <option>14:00</option>
+                  <option>17:00</option>
+                  <option>19:00</option>
+                  <option>21:00</option>
+                  <option>23:00</option>
+                </select>
+              </div>
+              <!-- <div class="form-check">
+                <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                <label class="form-check-label" for="optionsRadios1">
+                  Senin
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <label class="form-check-label" for="optionsRadios2">
+                  Selasa
+                </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                  <label class="form-check-label" for="optionsRadios3">
+                  Rabu
+                </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                  <label class="form-check-label" for="optionsRadios4">
+                  Kamis
+                </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                  <label class="form-check-label" for="optionsRadios5">
+                  Jumat
+                </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios6" value="option6">
+                  <label class="form-check-label" for="optionsRadios6">
+                  Sabtu
+                </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios7" value="option7">
+                  <label class="form-check-label" for="optionsRadios7">
+                  Ahad
+                </label>
+              </div> -->
+            
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Booking</button>
+          </fieldset>
+        </form>
+
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: rgb(79, 135, 255)"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Klinik Jamil
+            </h6>
+            <p>
+              Klinik Jamil adalah pusat pelayanan kesehatan terkemuka yang berkomitmen untuk memberikan perawatan holistik dan terjangkau kepada masyarakat.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+  
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="https://www.linkedin.com/in/wildan-jamil-2ab201294/"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i>
+               <img src="images/download.png" alt="" style="height: 20px; width: 20px;">
+            </a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="https://github.com/MasIdon"
+               role="button"
+               ><i class="fab fa-github"></i>
+               <img src="images/unnamed.png" alt="" style="height: 20px; width: 20px;">
+            </a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="Utama.html"
+         >Jamil Clinics</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+</body>
+</html>

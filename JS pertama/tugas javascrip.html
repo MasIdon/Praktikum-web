@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS</title>
+</head>
+<body>
+    <h1>Pertambahan</h1>
+
+    <label for="bil1">Bilangan 1</label>
+    <input type="number" name="bil1" id="bil1" onChange="penjumlahan()">
+    <p>+</p>
+    <label for="bil2">Bilangan 2</label>
+    <input type="number" name="bil2" id="bil2" onChange="penjumlahan()">
+
+    <button onclick="penjumlahan()">Jumlah</button>
+
+    <p>Jumlah <span id=total></span></p>
+
+    <script>
+        function penjumlahan() {
+            let bilangan1 = parseInt(document.getElementById("bil1").value);
+            let bilangan2 = parseInt(document.getElementById("bil2").value);
+
+                semua = bilangan1 + bilangan2;
+                document.getElementById("total").innerText=semua;
+        }
+    </script>
+    </script>
+</body>
+</html>

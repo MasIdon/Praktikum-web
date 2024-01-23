@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tugas Akhir</title>
+        <link href="css/bootstrap.wilwil.css" rel="stylesheet">
+    </head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div style="margin: auto; color: white;">
+      <h1 style="text-align: center; font-size: xxx-large;">Sistem Informasi Seminar Tugas Akhir</h1>
+      <h1 style="text-align: center;  font-size: xxx-large;">SISTA</h1>
+    </div>
+  </nav>
+
+  <table style="margin-left: 20px;">
+    <tr>
+        <td><a href="slide1.html">Home</a></td>
+        <td>|</td>
+        <td><a href="frontend4.html">Jadwal</a></td>
+        <td>|</td>
+        <td><a href="slide6.html">Daftar Seminar</a></td>
+        <td>|</td>
+        <td><a href="">Berita</a></td>
+        <td>|</td>
+        <td><a href="">About</a></td>
+    </tr>
+  </table>
+  <br><br>
+
+  <h6 style="width: 90%; margin-left: 20px;">Pendaftaran seminar berlaku untuk mahasiswa yang telah mendapat persetujuan dari Pembimbing TA</h6>
+
+  <div style="border: 2px solid rgb(98, 171, 255); width: 97%; margin: auto;">
+  <h3 style=" margin-left: 2%;">Form Daftar Seminar TA</h3>
+    <form action="" style="width: 95%; margin: auto;">
+      <div class="container-fluid">
+        <div class="row" style="margin-bottom: 2%;">
+          <table style="width: 50%; ">
+            <tr>
+            <td><label for="nama">Nama</label></td>
+            <td>:</td>
+            <td><input type="text" class="form-control" name="nama" id="nama" style="width: 90%;"></td>
+            </tr>
+            <tr>
+            <td><label for="nim">Nim</label></td>
+            <td>:</td>
+            <td><input type="number" class="form-control" name="nim" id="nim" style="width: 90%;"></td>
+            </tr>
+            <tr>
+            <td><label for="prodi">Prodi</label></td>
+            <td>:</td>
+            <td>
+              <select class="form-select" name="prodi" id="prodi" style="width: 90%;">
+              <option value="1">Teknik Informatika</option>
+              <option value="2">Sistem Informasi</option>
+              <option value="3">Bisinis Digital</option>
+              </select>
+            </td>
+            </tr>
+            <tr>
+            <td><label for="tanggal">Tanggal Seminar</label></td>
+            <td>:</td>
+            <td><input type="date" name="tanggal" id="tanggal" style="width: 90%; border: none;"></td>
+            </tr>
+            <tr>
+            <td><label for="jam">Jam Seminar</label></td>
+            <td>:</td>
+            <td><input type="datetime" class="form-control" name="jam" id="jam" style="width: 90%;"></td>
+            </tr>
+            <tr>
+            <td><label for="ruangan">Ruangan</label></td>
+            <td>:</td>
+            <td><input type="text" class="form-control" name="ruangan" id="ruangan" style="width: 90%;"></td>
+            </tr>
+          </table>
+          <table style="width: 50%; ">
+            <tr>
+              <td><label for="judul">Judul TA</label></td>
+              <td>:</td>
+              <td><textarea class="form-control name="judul" id="judul" cols="30" rows="2" style="width: 90%;"></textarea></td>
+            </tr>
+            <tr>
+              <td><label for="seminar">Seminar</label></td>
+              <td>:</td>
+              <td><select id="seminar" class="form-select" style="width: 90%;">
+                <option value="satu">Proposal</option>
+                <option value="duwa">Skripsi</option>
+                <option value="tiga">Teknologi</option>
+                <option value="empat">Kefarmasian</option>
+                <option value="lima">Kewirausahaan</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="pembimbing">Pembimbing</label></td>
+              <td>:</td>
+              <td><select class="form-select" style="width: 90%;">
+                <option value="satu">Sirojul Munir</option>
+                <option value="duwa">Rusmanto</option>
+                <option value="tiga">Krisna Panji</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="penguji1">Penguji 1</label></td>
+              <td>:</td>
+              <td><select id="penguji1" class="form-select" style="width: 90%;">
+                <option value="satu">Ahmad Rio</option>
+                <option value="duwa">Lukman Rosyidi</option>
+                <option value="tiga">Amalia Rahmah</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="penguji2">Penguji 2</label></td>
+              <td>:</td>
+              <td><select id="penguji2" class="form-select" style="width: 90%;">
+                <option value="satu">Amalia Rahmah</option>
+                <option value="duwa">Lukman Rosyidi</option>
+                <option value="tiga">Ahmad Rio</option>
+              </select></td>
+            </tr>
+          </table>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-bottom: 2%;">Kirim</button>
+        <button type="reset" class="btn btn-danger" style="margin-bottom: 2%; margin-left: 2%;">Reset</button>
+      </div>
+    </form>  
+  </div>
+  <br><br><br>
+</body>
+</html>
